@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>io.iykat</groupId>
 	<artifactId>wordsearch-api</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>wordsearch-api</name>
 	<description>API for generating word search</description>
 	<properties>
@@ -42,6 +42,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+<!--		<finalName>wordsearch-api</finalName>-->
 	</build>
 
 </project>

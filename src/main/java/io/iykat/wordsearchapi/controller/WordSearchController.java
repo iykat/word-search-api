@@ -21,8 +21,8 @@ public class WordSearchController {
 
     @GetMapping
     @ResponseBody
+    @CrossOrigin(origins = "http://localhost:1234")
     public String createWordGrid(@RequestParam("gridSize") int gridSize, @RequestParam String wordList) {
-        System.out.println("WE ARE HERE");
         List<String> words = Arrays.asList(wordList.split(","));
         char[][] grid = wordGridService.generateGrid(gridSize, words);
         String gridToString = "";
