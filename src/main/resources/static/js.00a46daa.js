@@ -668,7 +668,7 @@ submitWordBtn.addEventListener('click', /*#__PURE__*/(0, _asyncToGenerator2.defa
     while (1) switch (_context.prev = _context.next) {
       case 0:
         grid = new _grid.Grid();
-        commaSeperatedWords = document.querySelector('#add-word').value;
+        commaSeperatedWords = document.querySelector('#add-word').value.toUpperCase();
         gridSize = document.querySelector('#grid-size').value;
         _context.next = 5;
         return fetchGridInfo(gridSize, commaSeperatedWords);
@@ -739,7 +739,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49847" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54315" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

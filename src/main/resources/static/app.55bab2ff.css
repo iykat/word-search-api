@@ -1,13 +1,19 @@
-* {
-  font-family: sans-serif;
+@font-face {
+  font-family: "MyFont";
+  src: url("/wotfard-regular-webfont.27e770eb.woff2") format("opentype");
+  /* You can specify other font properties like font-weight, font-style, etc. */
 }
-
 .header {
   display: flex;
   flex-direction: column;
-  width: 300px;
   text-align: center;
   margin-inline: auto;
+  color: white;
+}
+
+h1 {
+  font-size: 30px;
+  margin-block-start: 40px;
 }
 
 .grid-area {
@@ -23,7 +29,76 @@
   height: 20px;
 }
 .grid-area table td.selected {
-  color: rgb(241, 176, 45);
+  color: white;
+  background-color: rgb(241, 176, 45);
+}
+
+body {
+  font-family: "MyFont", sans-serif;
+  background-image: url("/calm.811fa777.jpg");
+}
+
+.word-list-wrapper {
+  color: white;
+}
+
+.input-field-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  text-align: center;
+  margin: auto;
+}
+
+.input-field-section {
+  display: flex;
+  gap: 14px;
+  width: auto;
+  margin: auto;
+  margin-bottom: 14px;
+}
+
+input {
+  height: 40px;
+  font-family: inherit;
+  padding-inline: 12px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none !important;
+  border: 1px solid hsl(245, 100%, 60%);
+  box-shadow: 0 0 10px #719ece;
+}
+
+.submit-word {
+  width: 150px;
+  margin: auto;
+  height: 40px;
+  font-family: inherit;
+  font-weight: bolder;
+  border-radius: 4px;
+  border: none;
+  font-size: medium;
+  color: white;
+  background-color: hsl(333, 100%, 52%);
+}
+
+td {
+  background-color: white;
+  text-align: center;
+  padding: 6px;
+  font-weight: bolder;
+  border-radius: 6px;
+  margin-inline: 6px;
+}
+
+td:hover {
+  color: white;
+  background-color: rgb(241, 176, 45);
 }
 
 /*# sourceMappingURL=/app.55bab2ff.css.map */
